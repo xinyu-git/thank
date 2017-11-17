@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>《坦克世界》</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="keywords" content="《坦克世界》">
+<meta name="description" content="《坦克世界》">
+<meta name="full-screen" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-touch-fullscreen" content="yes">
+<meta name="format-detection" content="address=no">
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<meta http-equiv="Expires" content="-1">
+<meta http-equiv="Cache-Control" content="no-cache">
+<meta http-equiv="Pragma" content="no-cache">
+<link rel="icon" href="http://wot.kongzhong.com/images/favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="http://wot.kongzhong.com/images/favicon.ico" type="image/x-icon">
+<link rel="bookmark" href="http://wot.kongzhong.com/images/favicon.ico" type="image/x-icon">
+<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="js/rem.js"></script>
+<link type="text/css" rel="stylesheet" href="css/com.css">
+<link rel="stylesheet" type="text/css" href="css/style.css"/>
+
+</head>
+
+<body>
+<!--[if lte IE 8]>
+<body class="ite">
+<p class="chromeframe">亲，浏览器版本过低，换一个吧！<a href="http://windows.microsoft.com/" target="_blank">升级您的IE浏览器</a>，或使用<a href="http://www.google.cn/intl/zh-CN/chrome/" target="_blank">Google Chrome</a>、<a href="http://www.firefox.com.cn/download/" target="_blank">Firefox</a>等高级浏览器。</p>
+<![endif]-->
+<div class="wrap">
+	<div class="navHeader">
+		<div class="nav_wrap clearfloat">
+			<ul class="nav_right fl">
+				<li><a href="http://wot.kongzhong.com/wot.html" target="_blank">官网首页</a></li>
+				<li><a href="http://wot.kongzhong.com/ztm/warhonor/index.html" target="_blank">军功中心</a></li>
+				<li><a href="http://mall.kongzhong.com/#001" target="_blank">特惠商城</a></li>
+			</ul>
+			<!--登录前开始-->
+			<div class="login_bef fr">
+				<a href="javascript:;" class="login_btn user" onclick="Tips.showLogin();">登录</a>
+				<a href="http://wot.kongzhong.com/quickreg/zhuce.html?cpaid=10674052&utmSource=&utmCampaign=" target="_blank" class="reg">注册</a>
+			</div>
+			<!--登录前结束-->
+		</div>
+		<!--登录后开始-->
+		<div class="nav_left clearfloat" style="display: none;">
+			<b class="fl">
+				昵称：<span id="nickName">手中的曼沙华手中的曼沙华手中</span><br />
+				大区：<span id="zoneId">华北大区</span>
+			</b>
+			<a href="javascript:;" class="logout fr" >退出</a>
+		</div>
+		<!--登录后结束-->
+	</div>
+	<div class="part1_wrap">
+		<div class="part_top">
+			<div class="logo"><a href="http://wot.kongzhong.com/wot.html"><img src="images/logo.png" /></a></div>
+			<div class="ruleWrap">
+				<h2><i>活动规则</i></h2>
+				<p><i>1、活动期间内，玩家第一次登录此页面后，才算报名成功。</i></p>
+				<p><i>2、统计数据的时间为次日18时，数据当日有效，当日数据不与次日数据叠加。</i></p>
+				<p><i>3、活动奖励将在满足条件后次日发送至军功中心;</i></p>
+				<p><i>4、兑换奖励将在兑换成功后发送至军功中心;</i></p>
+				<p><i>5、所有奖励的有效期为7个自然日，请及时领奖，过期将无法领奖。</i></p>
+			</div>
+		</div>
+		<div class="actCon_box">
+			<div class="act_part">
+				<div class="taskBox">
+					<h2><img src="images/tit1.png"></h2>
+					<p>活动期间，每日使用≥4级坦克参与标准模式胜利2场，次日即可获得火鸡*1</p>
+					<br />
+					<br />
+					<h2><img src="images/tit1.png"></h2>
+					<p>活动期间，使用任意坦克参与标准模式战斗，满足以下条件即可获得奖励；</p>
+					<p>累计对敌方坦克造成20000点伤害获得：军功*100+火鸡*2</p>
+					<p>累计对敌方坦克造成50000点伤害获得：军功*300+火鸡*3</p>
+					<p>累计对敌方坦克造成80000点伤害获得：军功*500+火鸡*5</p>
+				</div>
+			</div>
+			<div class="act_part">
+				<div class="changeBox">
+					<h1 class="changeTitImg"><img src="images/changetit.png" /></h1>
+					<h3 class="changeTit">
+						<p class="ch_tips">注意：账号中已有坦克，兑换不会重复到账，所有物品只能兑换一次</p>
+						<p class="ch_icount"><i></i>剩余火鸡：18</p>
+					</h3>
+					<ul class="changeList">
+						<li>
+							<div class="rewardImg">
+								<p class="rImg"><img src="images/r1.png" /></p>
+								<p class="rName">大麦克斯</p>
+							</div>
+							<div class="changeBtnBox clearfloat">
+								<span class="changeNum fl"><i></i>x 10</span>
+								<a href="javascript:;" class="changeBtn fr" onclick="Tips.showChange();">点击兑换</a>
+							</div>
+						</li>
+						<li>
+							<div class="rewardImg">
+								<p class="rImg"><img src="images/r2.png" /></p>
+								<p class="rName">III号K型</p>
+							</div>
+							<div class="changeBtnBox clearfloat">
+								<span class="changeNum fl"><i></i>x 10</span>
+								<a href="javascript:;" class="changeBtn fr">点击兑换</a>
+							</div>
+						</li>
+						<li>
+							<div class="rewardImg">
+								<p class="rImg"><img src="images/r3.png" /></p>
+								<p class="rName">大修理箱*8</p>
+							</div>
+							<div class="changeBtnBox clearfloat">
+								<span class="changeNum fl"><i></i>x 1</span>
+								<a href="javascript:;" class="changeBtn fr">点击兑换</a>
+							</div>
+						</li>
+						<li>
+							<div class="rewardImg">
+								<p class="rImg"><img src="images/r4.png" /></p>
+								<p class="rName">大急救箱*8</p>
+							</div>
+							<div class="changeBtnBox clearfloat">
+								<span class="changeNum fl"><i></i>x 1</span>
+								<a href="javascript:;" class="changeBtn fr">点击兑换</a>
+							</div>
+						</li>
+						<li>
+							<div class="rewardImg">
+								<p class="rImg"><img src="images/r5.png" /></p>
+								<p class="rName">自动灭火器*8</p>
+							</div>
+							<div class="changeBtnBox clearfloat">
+								<span class="changeNum fl"><i></i>x 1</span>
+								<a href="javascript:;" class="changeBtn fr">点击兑换</a>
+							</div>
+						</li>
+						<li>
+							<div class="rewardImg">
+								<p class="rImg"><img src="images/r6.png" /></p>
+								<p class="rName">小修理箱*50+907工程A（3天）</p>
+							</div>
+							<div class="changeBtnBox clearfloat">
+								<span class="changeNum fl"><i></i>x 1</span>
+								<a href="javascript:;" class="changeBtn fr">点击兑换</a>
+							</div>
+						</li>
+						<li>
+							<div class="rewardImg">
+								<p class="rImg"><img src="images/r7.png" /></p>
+								<p class="rName">100000银币+VK7201（3天）</p>
+							</div>
+							<div class="changeBtnBox clearfloat">
+								<span class="changeNum fl"><i></i>x 1</span>
+								<a href="javascript:;" class="changeBtn fr">点击兑换</a>
+							</div>
+						</li>
+						<li>
+							<div class="rewardImg">
+								<p class="rImg"><img src="images/r8.png" /></p>
+								<p class="rName">提神咖啡*8</p>
+							</div>
+							<div class="changeBtnBox clearfloat">
+								<span class="changeNum fl"><i></i>x 1</span>
+								<a href="javascript:;" class="changeBtn fr">点击兑换</a>
+							</div>
+						</li>
+						<li>
+							<div class="rewardImg">
+								<p class="rImg"><img src="images/r9.png" /></p>
+								<p class="rName">105号汽油*8</p>
+							</div>
+							<div class="changeBtnBox clearfloat">
+								<span class="changeNum fl"><i></i>x 1</span>
+								<a href="javascript:;" class="changeBtn fr">点击兑换</a>
+							</div>
+						</li>
+						<li>
+							<div class="rewardImg">
+								<p class="rImg"><img src="images/r10.png" /></p>
+								<p class="rName">可口可乐*8</p>
+							</div>
+							<div class="changeBtnBox clearfloat">
+								<span class="changeNum fl"><i></i>x 1</span>
+								<a href="javascript:;" class="changeBtn fr">点击兑换</a>
+							</div>
+						</li>
+						<li>
+							<div class="rewardImg">
+								<p class="rImg"><img src="images/r11.png" /></p>
+								<p class="rName">经验加成100%1小时*3</p>
+							</div>
+							<div class="changeBtnBox clearfloat">
+								<span class="changeNum fl"><i></i>x 1</span>
+								<a href="javascript:;" class="changeBtn fr">点击兑换</a>
+							</div>
+						</li>
+						<li>
+							<div class="rewardImg">
+								<p class="rImg"><img src="images/r12.png" /></p>
+								<p class="rName">SMA-2（3天）+100000银币</p>
+							</div>
+							<div class="changeBtnBox clearfloat">
+								<span class="changeNum fl"><i></i>x 1</span>
+								<a href="javascript:;" class="changeBtn fr">点击兑换</a>
+							</div>
+						</li>
+						<li>
+							<div class="rewardImg">
+								<p class="rImg"><img src="images/r13.png" /></p>
+								<p class="rName">红茶布丁*8</p>
+							</div>
+							<div class="changeBtnBox clearfloat">
+								<span class="changeNum fl"><i></i>x 1</span>
+								<a href="javascript:;" class="changeBtn fr">点击兑换</a>
+							</div>
+						</li>
+						<li>
+							<div class="rewardImg">
+								<p class="rImg"><img src="images/r14.png" /></p>
+								<p class="rName">3天VIP+268V型（3天）</p>
+							</div>
+							<div class="changeBtnBox clearfloat">
+								<span class="changeNum fl"><i></i>x 1</span>
+								<a href="javascript:;" class="changeBtn fr">点击兑换</a>
+							</div>
+						</li>
+						<li>
+							<div class="rewardImg">
+								<p class="rImg"><img src="images/r15.png" /></p>
+								<p class="rName">252工程（3天）+巧克力*8</p>
+							</div>
+							<div class="changeBtnBox clearfloat">
+								<span class="changeNum fl"><i></i>x 1</span>
+								<a href="javascript:;" class="changeBtn fr">点击兑换</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer">
+		<div class="copyright"><img src="images/kongzhong.png"><span>京ICP证020001号<br>经营许可证编号：B2-20090197</span>
+		</div>
+		<div class="note">
+			<span>抵制不良游戏</span><span>拒绝盗版游戏</span><span>注意自我保护</span><span>谨防受骗上当</span><span>适度游戏益脑</span><span>沉迷游戏伤身</span><span>合理安排时间</span><span>享受健康生活</span>
+		</div>
+	</div>
+</div>
+
+
+
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript" src="js/style.js"></script>
+	<div style="display:none"><script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_2492438'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s13.cnzz.com/stat.php%3Fid%3D2492438' type='text/javascript'%3E%3C/script%3E"));</script></div>
+</body>
+</html>
