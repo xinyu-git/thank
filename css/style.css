@@ -130,7 +130,14 @@
 .changeList li{float: left;width:2.3rem;height: 1.6rem;background: url(../images/listbg.png) no-repeat center;background-size: 100% 100%;margin:0.05rem 0.05rem;}
 .rewardImg{width:2.24rem;height: 1.15rem;background: url(../images/listbg1.png) no-repeat center;margin:0.03rem auto;position: relative;background-size: 100% 100%;}
 .rName{width:100%;background:rgba(0,0,0,0.5);position: absolute;left: 0;bottom: 0;text-align: center;padding:0.05rem 0;font-size:0.24rem;font-weight: bold;color: #f6d55c; }
-.changeBtnBox{padding:0 0.08rem;font-weight: bold;}
+.changeBtnBox{
+	height:0.39rem;
+	padding:0 0.05rem;font-weight: bold;
+	display: flex;
+	justify-content:space-around;
+	align-content:center;
+	align-items:center;
+}
 .changeNum{font-size: 0.24rem;color: #f6d55c;}
 .changeNum i{display: inline-block;*display: inline;*zoom:1;width: 0.32rem;height: 0.22rem;background: url(../images/ch2.png) no-repeat center;margin-right: 0.05rem;vertical-align:middle;background-size: 100% 100%;}
 .changeBtn{background: url(../images/chbtnbg1.png) no-repeat center;background-size: 100% 100%;text-align: center;color: #000;font-size: 0.24rem;text-indent: -999em;width: 0.96rem;height:0.22rem;}
