@@ -138,8 +138,12 @@
 .rImg img{display: block;width: 100%;height: 100%;}
 
 /*测试 git push*/
+<<<<<<< HEAD
 
 
 
 
 
+=======
+.test{width: 100%;height: 5rem;background: blue;}
+>>>>>>> master
